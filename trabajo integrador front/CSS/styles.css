@@ -1,0 +1,312 @@
+
+:root{
+    /*colores*/
+    --firstcollor:#353a40;
+    --textcollor1:white;
+    --textcollor2:#337b4b;
+    --footcollor:#1e4f6d;   
+    --backcollor1:#28a844;
+    --brordcollor1:#e9e7e2;  
+    --backcollor2:#97c839;
+
+
+    /* fuentes */
+
+   
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    overflow: hidden;
+    display: flex;
+    flex-direction:row;
+    background-color:var(--firstcollor);
+    height: 5.1em;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+
+    .logo {
+        flex: auto;     
+        display: inline-block;
+        color:var(--textcollor1);
+        margin-left: 2em;
+
+        & img{
+            height: 5em;
+            vertical-align:middle;
+        }
+        & h2{
+            display: inline-block;  
+            align-items: start;    
+            margin-right:10em; 
+        }
+         
+    }  
+        & nav{        
+            padding:2em;         
+            float:right;
+        
+        & a{    
+            align-items: end; 
+            margin-right: 0em;   
+            color: var(--textcollor1);
+            margin:  0 .6em ;
+            text-decoration: none;
+        }
+    }  
+    .ticket{
+        color: var(--textcollor2);
+    }  
+        
+}    
+
+main{
+   
+    .principal{
+       
+        position: relative;      
+           
+        & img{ 
+          
+            display: flex;
+            width: 100%;  
+            filter:brightness(0.25);
+            height:10;
+            background-size:cover;
+
+        }
+       
+        .text-principal{
+            /* flex: auto; */
+            display: flex;
+            flex-flow: wrap;
+            width:40vw;
+            position: absolute;
+            top: 40vh;
+            color: var(--textcollor1);
+            text-align:right;
+            right: 5%;
+            line-height:1.5em;
+            justify-content: end;
+            
+
+            & p{
+               
+                flex-flow: wrap-reverse;
+                margin: 1.5em 0;
+
+
+            }
+            & a{
+                border: 1px solid var(--textcollor1);
+                border-radius: 3px;
+                color:var(--textcollor1);
+                text-decoration: none;
+                padding: 10px 15px;
+                margin:0.3em;
+               
+
+            }  
+            
+            .compra{
+                background-color: var(--backcollor1);
+                border-color: var(--backcollor1);
+
+
+            }
+                              
+        }                  
+
+    }
+
+}
+
+.grid-content{
+   display: grid;
+   grid-template-areas: 'orador orador'
+              'paisaje descripcion'
+              'form form';
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows:auto auto auto ;
+     /* & div[class^='item']{
+        border: solid 2px purple;
+    }           */
+    .item-1{
+        grid-area: orador;
+        
+        .title{
+          text-align: center;
+          margin-top: 15px;
+
+        }
+        
+        .container-card{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            & div[class^='card']{
+                width: 250px;
+                height: 500px;
+                border:solid 1px var(--brordcollor1) ;
+                & img{
+                width: 100%;
+                height: 55%;             
+                
+               
+            } & h3{
+                 margin: 0 10px;
+
+            }
+             & nav{
+                display:inline-block;
+                margin: 7px  7px;
+
+            }  
+             & a{
+                margin:2px;
+                padding: 3px;
+                text-decoration: none;
+                color: var(--brordcollor1);
+                background-color:var(--footcollor);
+                border-radius:3px;
+
+
+             }
+            & p{
+                    margin: 5px;
+                    padding: 5px;
+                }
+            }                       
+        }
+    }
+    .item-2{
+        grid-area: paisaje;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+    .item-3{
+        grid-area: descripcion;
+        background-color: var(--firstcollor);
+        color: var(--textcollor1);
+        padding: 1em;
+        line-height: 1.5em;
+        & p{
+            margin: 1.5em 0;
+
+
+        }
+        
+        & a{
+            border: 1px solid var(--textcollor1);
+            border-radius:3px;
+            color: var(--textcollor1);
+            text-decoration: none;
+            padding: 10px 15px;
+            
+            
+        }
+
+    }
+    .item-4{
+        grid-area: form;
+        text-align: center;
+        margin-top: 10px;
+
+        
+    }& form{
+        display:flex;
+        flex-flow: column;
+        justify-content: center;      
+        margin: 18px;
+    } & input, textarea{
+        border: solid 1px var(--firstcollor);
+        border-radius: 3px;
+        margin: 5px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    } & h4{
+        font-family: Arial, Helvetica, sans-serif;
+    } & p{
+        font-size:medium;
+    }
+    .botn{
+      background-color: var(--backcollor2);
+      width: 720px;
+      padding: 11px;
+      color: var(--textcollor1);
+      font-size: medium;
+      letter-spacing: 2px;
+      border-radius: 3px;
+      border-color: var(--backcollor2);
+     
+      
+    }
+    
+
+}
+
+
+
+          
+.pie{
+
+    margin:0px;
+    width: 100%;
+    background-color:var(--footcollor);
+    height: 5em;
+   
+    & nav{
+        display: flex;
+        /* display: inline-block; */
+       
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    & a{   
+     
+     text-align: center;    
+     text-decoration: none;
+     color: var(--textcollor1);
+     margin: 2em .8em;
+     
+     
+    }  
+}                      
+    
+@media screen and (max-width: 500px) {
+   
+
+    .pie {background-color: var(--firstcollor);
+        width:max-content;
+    }
+    .grid-content2{
+        width: 100%;
+
+    }.item-2, .item-3{
+        width: 100vw;
+    }
+    
+    textarea{
+        justify-content: center;
+        width: 100%;
+    }
+       
+    
+    
+    
+        
+}
