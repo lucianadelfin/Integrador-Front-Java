@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra tus Tickets</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../imagenes_integrador_front/codoacodo.png" alt="">
+      <h2>Conference Bs As</h2>
+
+    </div>
+    <nav>
+      <a href="../index.html">La Conferencia</a>
+      <a href="#orador">Oradores</a>
+      <a href="#lugar">Lugar y fecha</a>
+      <a href="#conviertete">Conviértete en Orador</a>
+
+      <a href="#pie"></a>
+
+    </nav>
+
+
+  </header>
+
+
+  <main id="tik">
+
+    <div>
+      <h1>Compra tus Tickets</h1>
+    </div>
+
+    <div class="row row-cols-lg-3 row-cols-md-4 g-5 m-5">
+      <div class="col">
+        <div class="card h-100">
+
+          <div class="card-body align-content-center" id="junior">
+            <h2 class="card-title text-center text-info">Trainee</h2>
+            <h3 class="card-text text-bg-info text-center text-white">15% Descuento</h3>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+
+          <div class="card-body" id="estudiante">
+            <h2 class="card-titlen text-center text-danger">Estudiantes</h2>
+            <h3 class="card-text text-bg-danger text-center ">80% Descuento</h3>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+
+          <div class="card-body" id="trainee">
+            <h2 class="card-title text-center text-success">Junior</h2>
+            <h3 class="card-text text-bg-success text-center ">50% Descuento</h3>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h2 id="precio">Precio Ticket $1000</h2>
+    <div class="container">
+
+
+      <div class="form-container col-8">
+        <form class="row g-3 ">
+          <div class="col-10 m-4">
+
+            <input type="email" class="form-control" placeholder="Email" id="email">
+          </div>
+
+          <div class="col-9 m-4">
+
+
+            <input type="text" class="form-control" id="name" placeholder="Nombre/Name">
+          </div>
+          <div class="col-9 m-4">
+
+            <input type="text" class="form-control " id="apellido" placeholder="Apellido/Surname">
+          </div>
+
+
+          <div class="col-5 m-4">
+
+            <input type="text" class="form-control" id="cantTick" placeholder="Cantidad">
+          </div>
+          <div class="col-6 m-4">
+
+            <select id="category" class="form-select">
+              <option selected>Categoria</option>
+              <option> Trainee</option>
+              <option>Junior</option>
+              <option>Estudiante</option><br><br>
+            </select>
+          </div>
+          <div class="col-8 m-4">
+            <input type="text" id="totalPagar" class="form-control col-2 bg-info-subtle" value=" Total a Pagar $: " readonly>
+          </div>
+
+
+          <div class="d-grid gap-2 col-6 mx-auto m-3">
+            <button class="btn btn-secondary" type="button" onclick="comrprarButton" >Comprar</button>
+
+          </div>
+
+
+
+        </form>
+
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+
+  <footer class="pie">
+    <nav>
+      <a href="">Preguntas Frecuentes</a>
+      <a href="">Contactanos</a>
+      <a href="">Prensa</a>
+      <a href="">Conferencias</a>
+      <a href="">Términos y condiciones</a>
+      <a href="">Privacidad</a>
+      <a href="">Estudiantes</a>
+
+    </nav>
+
+  </footer>
+  
+  <script src="../JS/script.js"></script>
+  <!-- <script src="../JS/bootstrap.min.js"></script> -->
+  
+</body>
+
+</html>
